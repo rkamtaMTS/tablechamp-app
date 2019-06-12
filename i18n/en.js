@@ -46,10 +46,6 @@ var i18n = {
 		},
 		"settingsBasics" : {
 			"companyOrClub" : "Company or club name",
-			"gameAirHockey" : "Air Hockey",
-			"gameBilliards" : "Billiards",
-			"gameFoosball" : "Foosball",
-			"gameShuffleboard" : "Shuffleboard",
 			"gameTableTennis" : "Table Tennis",
 			"language" : "Language",
 			"orgName" : "What is the name of your organization",
