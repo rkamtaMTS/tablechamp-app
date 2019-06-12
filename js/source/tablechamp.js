@@ -1122,18 +1122,8 @@
         $('#orgName').val(localData.settings.orgName).focus();
         $('.org').text(localData.settings.orgName);
         // Update game type
-        var gameType = '';
-        if ('air-hockey' === localData.settings.gameType) {
-            gameType = 'Air Hockey';
-        } else if ('billiards' === localData.settings.gameType) {
-            gameType = 'Billiards';
-        } else if ('foosball' === localData.settings.gameType) {
-            gameType = 'Foosball';
-        } else if ('shuffleboard' === localData.settings.gameType) {
-            gameType = 'Shuffleboard';
-        } else {
-            gameType = 'Table Tennis';
-        }
+        var gameType = 'Table Tennis';
+  
         $('.game-type').text(gameType);
         $('input[value="' + localData.settings.gameType + '"]').prop('checked', true);
         var lang = localStorage.getItem('lang') || 'en';
@@ -1188,10 +1178,6 @@
     function sidebarInitBasic() {
         $('.sidebar-body').html(tmpl('settingsBasics', {
             "companyOrClub" : i18n.app.settingsBasics.companyOrClub,
-            "gameAirHockey" : i18n.app.settingsBasics.gameAirHockey,
-            "gameBilliards" : i18n.app.settingsBasics.gameBilliards,
-            "gameFoosball" : i18n.app.settingsBasics.gameFoosball,
-            "gameShuffleboard" : i18n.app.settingsBasics.gameShuffleboard,
             "gameTableTennis" : i18n.app.settingsBasics.gameTableTennis,
             "language" : i18n.app.settingsBasics.language,
             "nextButton" : i18n.app.global.nextButton,
